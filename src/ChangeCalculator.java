@@ -12,9 +12,9 @@ import javax.swing.JOptionPane;
 public class ChangeCalculator {
 
 	public static void main(String[] args) {
-
+String nick = JOptionPane.showInputDialog(null, "Nicleks?");
 		// Ask the user how many nickels they have
-
+int n=Integer.parseInt(nick);
 		// Convert their answer to an int using Integer.parseInt()
 
 		// Ask the user how many dimes they have, and convert their answer
