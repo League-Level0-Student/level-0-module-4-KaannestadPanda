@@ -12,9 +12,21 @@ import javax.swing.JOptionPane;
 public class ChangeCalculator {
 
 	public static void main(String[] args) {
-String nick = JOptionPane.showInputDialog(null, "Nicleks?");
 		// Ask the user how many nickels they have
+String nick = JOptionPane.showInputDialog(null, "Nicleks?");
 int n=Integer.parseInt(nick);
+int niklecs=5*n;
+
+String dumb = JOptionPane.showInputDialog(null, "dooms?");
+int d=Integer.parseInt(dumb);
+int dimleks=10*d;
+
+String quarterr = JOptionPane.showInputDialog(null, "quarks?");
+int q=Integer.parseInt(quarterr);
+int quartets=25*q;
+
+double dollor  = (quartets+dimleks+niklecs)/100.0;
+JOptionPane.showInputDialog("You have like $" +dollor+ " or something.");
 		// Convert their answer to an int using Integer.parseInt()
 
 		// Ask the user how many dimes they have, and convert their answer
