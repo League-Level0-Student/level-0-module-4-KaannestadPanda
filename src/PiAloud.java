@@ -12,6 +12,7 @@ String superlong="3.141592653589793238462643383279502884197169399375105820974944
 	// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
 for(int g=0; g<superlong.length();g++) {
 	speak(superlong.charAt(g));
+	System.out.println(superlong.charAt(g));
 }
 	// 3. Print out some digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
 
