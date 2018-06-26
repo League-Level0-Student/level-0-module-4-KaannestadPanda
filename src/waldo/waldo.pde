@@ -1,6 +1,7 @@
 void setup() {
       PImage waldo = loadImage("waldo.jpg"); // 5. Change this to match your file name.
-      size(500, 500);
+     waldo.resize(1900,1000);
+      size(1900, 1000);
       image(waldo, 0, 0);
      doh = minim.loadSample("/Users/League/Google Drive/league-sounds/homer-doh.wav");
      woohoo = minim.loadSample("/Users/League/Google Drive/league-sounds/homer-woohoo.wav");
@@ -8,7 +9,14 @@ void setup() {
 
 void draw() {
       // 6. Use this print statement to find out the coordinates of Waldo
-      // println("X: " + mouseX + " Y: " + mouseY); 
+      println("X: " + mouseX + " Y: " + mouseY); 
+if(mouseX>=775&&mouseX<=825&&mouseY>=155&&mouseY<=210&&mousePressed){
+  println("WALDO FOUND");
+  playWoohoo();
+}
+else if(mousePressed){
+ playDoh(); 
+}
 
       // 7. If the mouse is on Waldo, print “Waldo found!”
 
